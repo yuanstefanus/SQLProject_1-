@@ -1,2 +1,2 @@
-# SQLProject_1-
+# SQLProject_1
 SQL portfolio project, data cleaning

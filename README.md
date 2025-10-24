@@ -28,7 +28,12 @@ CREATE TABLE retail_sales
 
 **2. Import raw data to the table in the database**
 
-**3. Make Sure**
+**3. Make Sure of the imported data**
+```sql
+SELECT 
+	COUNT (*) --> Hitung jumlah row, apakah yg di import benar segitu rows nya atau ada yg kurang?
+FROM retail_sales
+```
 
 ### 2. Data Exploration & Cleaning
 
@@ -177,6 +182,7 @@ GROUP BY shift
 ```
 
 This project is part of my portfolio
+
 
 
 

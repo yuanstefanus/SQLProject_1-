@@ -6,7 +6,7 @@ This project is to enrich my portfolio in  data analytics, this project is about
 
 I have attached the raw data in excel
 
-1. First, create all the columns for the data
+**1. First,** create all the columns for the data
 -- Create TABLE
 ```sql
 DROP TABLE IF EXISTS retail_sales; -- Drop table ini gunanya untuk hapus table
@@ -229,6 +229,7 @@ For more content on SQL, data analysis, and other data-related topics, make sure
 - **Discord**: [Join our community to learn and grow together](https://discord.gg/36h5f2Z5PK)
 
 Thank you for your support, and I look forward to connecting with you!
+
 
 
 

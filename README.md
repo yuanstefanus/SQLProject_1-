@@ -71,7 +71,57 @@ WHERE
 	total_sale IS NULL;
 ```
 
+**4. OPTIONAL// Delete/clean the data that contains NULL**
+```sql
+DELETE FROM retail_sales --Ini tergantung prosedur, bisa jadi disuruh DELETE data yg punya null
+WHERE 
+	transactions_id IS NULL
+	OR
+	sale_date IS NULL
+	OR
+	sale_time IS NULL
+	OR
+	gender IS NULL
+	OR
+	age IS NULL
+	OR
+	category IS NULL
+	OR
+	quantity IS NULL
+	OR
+	price_per_unit IS NULL
+	OR
+	cogs IS NULL
+	OR
+	total_sale IS NULL;
+```
+
+**5. Reassure, check the rows**
+```sql
+SELECT 
+	COUNT (*)
+FROM retail_sales --Cek jumlah rows to make sure data yg tadi beneran kehapus or not
+Cek lagi data yg punya value NULL pake syntax yg di atas tadi 
+```
+**6. Then, all set !**
+
+### Next, sorting data: 
+
+Contoh soal kecil-kecilan
+```sql
+-- cek jumlah customer ?
+SELECT COUNT (DISTINCT customer_id) as customers FROM retail_sales -- DISCTINT untuk menghilangkan redundan/data double
+
+-- cek jumlah kategori ?
+SELECT COUNT (DISTINCT category) as total_category FROM retail_sales -- result nya angka
+
+-- How many categories (nama nya/ apa apa saja)
+SELECT DISTINCT category FROM retail_sales
+```
+
+
 This project is part of my portfolio
+
 
 
 

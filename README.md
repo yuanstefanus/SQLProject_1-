@@ -283,7 +283,4 @@ GROUP BY 1
 ORDER BY total_order DESC
 ```
 
-```sql
-```
-
 This project is part of my portfolio :D 

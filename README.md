@@ -4,6 +4,27 @@
 
 This project is to enrich my portfolio in  data analytics, this project is about sales transactions data
 
+I have attached the raw data in excel
+
+-- Create TABLE
+-- Drop table ini gunanya untuk hapus table
+```sql
+DROP TABLE IF EXISTS retail_sales;
+CREATE TABLE retail_sales
+			(
+				transactions_id INT PRIMARY KEY,
+				sale_date DATE,
+				sale_time TIME,
+				customer_id INT,
+				gender VARCHAR (15),
+				age INT,
+				category VARCHAR (15) ,
+				quantity INT,
+				price_per_unit FLOAT,
+				cogs FLOAT,
+				total_sale FLOAT
+			);
+```
 
 ```sql
 CREATE DATABASE p1_retail_db;
@@ -208,6 +229,7 @@ For more content on SQL, data analysis, and other data-related topics, make sure
 - **Discord**: [Join our community to learn and grow together](https://discord.gg/36h5f2Z5PK)
 
 Thank you for your support, and I look forward to connecting with you!
+
 
 
 
